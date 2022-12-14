@@ -10,6 +10,14 @@ Existem vários protocolos QKD diferentes que foram propostos e estudados, inclu
 
 Além dos protocolos QKD, também existem outros protocolos usados na criptografia quântica, como o protocolo OTP e o protocolo de autenticação baseado em BB84. Esses protocolos oferecem diferentes recursos e capacidades e podem ser úteis em aplicações ou cenários específicos.
 
+\begin{figure}[!hbt]
+  \centering
+  \includegraphics[width=\textwidth]{images/foton-pipeline.jpg}
+  \caption{Figura informativa gráfica de uma arquitetura de canal quântico.}
+  \label{fig:qkd-pipeline}
+\end{figure}
+\FloatBarrier
+
 \section{Protocolos de Geração e Distribuição de Chaves}
 
 O protocolo de geração e distribuição de chaves é uma parte fundamental de qualquer sistema criptográfico quântico. Este protocolo é responsável por criar e distribuir as chaves criptográficas que são usadas para codificar e descodificar as informações transmitidas por um canal quântico.
@@ -29,6 +37,14 @@ O protocolo BB84, nomeado após seus inventores Charles Bennett e Gilles Brassar
 A segurança do protocolo BB84 reside no fato de que qualquer tentativa de medir os estados quânticos irá perturbá-los, impossibilitando que um invasor obtenha a chave sem ser detectado. Isso é conhecido como o princípio da não-clonagem quântica.
 
 O protocolo BB84 foi extensivamente estudado e demonstrou ser seguro contra vários tipos de ataques, incluindo ataques de intercepção e reenvio e ataques baseados em entrelaçamento. No entanto, como todos os protocolos QKD, é suscetível à perda de informações por meio de canais laterais, como perda de fotões no canal quântico. As propostas para mitigar essa limitação incluem o uso de códigos de correção de erros e estados de chamariz.
+
+\begin{figure}[!hbt]
+  \centering
+  \includegraphics[width=\textwidth]{images/bb84.jpg}
+  \caption{Figura ilustrativa do protocolo BB84. O remetente e o destinatário compartilham uma chave secreta trocando estados quânticos por um canal quântico. A chave é gerada medindo os estados usando um dos dois observáveis conjugados, escolhidos aleatoriamente.}
+  \label{fig:bb84}
+\end{figure}
+\FloatBarrier
 
 \subsection{Protocolo B92}
 
@@ -50,6 +66,14 @@ A segurança do protocolo E91 baseia-se nos mesmos princípios do protocolo BB84
 
 Assim como os protocolos BB84 e B92, o protocolo E91 é suscetível à perda de informações por meio de canais laterais e outros ataques. Os pesquisadores estudaram várias maneiras de mitigar essas limitações, como o uso de estados de chamariz e códigos de correção de erros.
 
+\begin{figure}[!hbt]
+  \centering
+  \includegraphics[width=\textwidth]{images/e91.jpg}
+  \caption{Figura ilustrativa do protocolo E91. O remetente e o destinatário compartilham um par de partículas emaranhadas. O remetente mantém uma partícula e envia a outra para o receptor. Eles então usam suas partículas para gerar uma chave secreta, medindo-as usando um dos dois observáveis conjugados, escolhidos aleatoriamente.}
+  \label{fig:e91}
+\end{figure}
+\FloatBarrier
+
 \subsection{Protocolo SARG04}
 
 O protocolo SARG04, também conhecido como protocolo de quatro estados, é um protocolo de distribuição de chave quântica (QKD) proposto por Stefano Pironio, Antonio Acin, Nicolas Gisin e Valerio Scarani em 2004. É uma variante do BB84 e B92 protocolos que usam quatro estados quânticos em vez de dois.
@@ -59,6 +83,14 @@ No protocolo SARG04, o remetente e o destinatário compartilham uma chave secret
 A segurança do protocolo SARG04 baseia-se nos mesmos princípios dos protocolos BB84 e B92: a impossibilidade de medir estados quânticos sem perturbá-los e o uso de observáveis conjugados para detectar qualquer distúrbio. O uso de quatro estados em vez de dois permite que o protocolo seja mais resistente a certos tipos de ataques, como o ataque de intercepção e reenvio.
 
 Como os outros protocolos QKD, o protocolo SARG04 é suscetível à perda de informações por meio de canais laterais e outros ataques. Os pesquisadores estudaram várias maneiras de mitigar essas limitações, como o uso de estados de chamariz e códigos de correção de erros.
+
+\begin{figure}[!hbt]
+  \centering
+  \includegraphics[width=\textwidth]{images/bb84-vs-sarg04.jpg}
+  \caption{Figura comparativa entre os protocolos BB84 e SARG04 no que diz respeito à segurança. O protocolo BB84 é mais suscetível a ataques de intercepção e reenvio, enquanto o protocolo SARG04 é mais suscetível a ataques de canal lateral.}
+  \label{fig:bb84-vs-sarg04}
+\end{figure}
+\FloatBarrier
 
 \subsection{Protocolo OTP}
 

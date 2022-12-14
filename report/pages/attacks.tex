@@ -16,6 +16,14 @@ Os ataques no canal clássico visam a transmissão de informações clássicas p
 
 Outro tipo de ataque ao canal clássico é o ataque man-in-the-middle, no qual o invasor intercepta a informação clássica e a modifica para obter acesso à chave secreta. Esse tipo de ataque pode ser difícil de detectar, pois o invasor pode manipular as informações clássicas de forma que pareçam válidas para as partes legítimas.
 
+\begin{figure}[!hbt]
+  \centering
+  \includegraphics[width=\textwidth]{images/possible-attack.jpg}
+  \caption{Figura ilustrativa de um ataque ao canal clássico.}
+  \label{fig:classic-attack}
+\end{figure}
+\FloatBarrier
+
 \section{Ataques Conhecidos}
 
 Existem vários métodos conhecidos de ataque em criptografia quântica, que visam vários aspectos dos sistemas QKD. Esses métodos incluem:
@@ -43,6 +51,14 @@ Um ataque de divisão de número de fotões é um tipo de ataque em criptografia
 Os ataques de divisão do número de fotões são uma preocupação particular em sistemas QKD que usam estados coerentes fracos, pois esses estados são compostos de uma superposição de diferentes números de fotões. O atacante pode dividir o estado em duas partes, cada uma contendo um número diferente de fotões, e medir cada parte separadamente. Isso permite que o invasor obtenha informações parciais sobre a chave secreta, sem ser detectado pelas partes legítimas.
 
 Existem vários métodos conhecidos de detecção e mitigação de ataques de divisão do número de fotões. Por exemplo, códigos de correção de erros quânticos podem ser usados para detectar e corrigir erros nos estados quânticos, como perda de fotões ou erros de fase. Além disso, a autenticação quântica pode ser usada para verificar a identidade das partes envolvidas no sistema QKD e evitar ataques de representação.
+
+\begin{figure}[!hbt]
+  \centering
+  \includegraphics[width=\textwidth]{images/foton-division-attack.jpg}
+  \caption{Figura ilustrativa de um ataque de divisão do número de fotões. O atacante divide o estado quântico em duas partes, cada uma contendo um número diferente de fotões. O atacante mede cada parte separadamente para obter informações parciais sobre a chave secreta.}
+  \label{fig:foton-division-attack}
+\end{figure}
+\FloatBarrier
 
 \subsection{Ataques de Personificação}
 
