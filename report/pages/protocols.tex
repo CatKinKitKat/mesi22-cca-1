@@ -1,9 +1,136 @@
-\chapter{Limitações}
+\chapter{Protocolos usados na criptografia quântica}
 
-\section{Limitações conhecidas}
+Na criptografia quântica, os protocolos são as regras e procedimentos usados para codificar, transmitir e descodificar informações em um canal quântico. Esses protocolos são baseados nos princípios da mecânica quântica e são projetados para serem seguros contra uma variedade de ataques.
 
-\textit{artigos: "On the Quantum Mechanical Bound on the Loss of Information through Side Channels in Quantum Cryptography", "Limitations on Practical Quantum Cryptography"}
+Um dos principais protocolos na criptografia quântica é o protocolo Quantum Key Distribution (QKD). Este protocolo permite a troca segura de chaves criptográficas em um canal quântico e é baseado nos princípios da mecânica quântica.
 
-\section{Propostas de mitigação das limitações}
+O protocolo QKD usa fotões para codificar e transmitir informações e é projetado para ser seguro contra uma variedade de ataques, incluindo aqueles que exploram as leis da física clássica. Além disso, os protocolos QKD também são projetados para serem resistentes a perdas e ruídos, permitindo uma comunicação segura em longas distâncias e em ambientes desafiadores.
 
-\textit{artigo: "Quantum cryptography beyond quantum key distribution"}
+Existem vários protocolos QKD diferentes que foram propostos e estudados, incluindo o protocolo BB84, o protocolo B92, o protocolo E91 e o protocolo SARG04. Cada um desses protocolos tem seus próprios recursos e vantagens exclusivos e pode ser mais adequado para diferentes aplicações e cenários.
+
+Além dos protocolos QKD, também existem outros protocolos usados na criptografia quântica, como o protocolo OTP e o protocolo de autenticação baseado em BB84. Esses protocolos oferecem diferentes recursos e capacidades e podem ser úteis em aplicações ou cenários específicos.
+
+\section{Protocolos de Geração e Distribuição de Chaves}
+
+O protocolo de geração e distribuição de chaves é uma parte fundamental de qualquer sistema criptográfico quântico. Este protocolo é responsável por criar e distribuir as chaves criptográficas que são usadas para codificar e descodificar as informações transmitidas por um canal quântico.
+
+Um dos protocolos de geração e distribuição de chaves mais amplamente utilizados na criptografia quântica é o protocolo Quantum Key Distribution (QKD). Este protocolo permite a troca segura de chaves criptográficas em um canal quântico e é baseado nos princípios da mecânica quântica.
+
+O protocolo QKD usa fotões para codificar e transmitir informações e é projetado para ser seguro contra uma variedade de ataques, incluindo aqueles que exploram as leis da física clássica. Além disso, os protocolos QKD também são projetados para serem resistentes a perdas e ruídos, permitindo uma comunicação segura em longas distâncias e em ambientes desafiadores.
+
+Existem vários protocolos QKD diferentes que foram propostos e estudados, incluindo o protocolo BB84, o protocolo B92, o protocolo E91 e o protocolo SARG04. Cada um desses protocolos tem seus próprios recursos e vantagens exclusivos e pode ser mais adequado para diferentes aplicações e cenários.
+
+Além dos protocolos QKD, também existem outros protocolos de geração e distribuição de chaves que foram propostos e estudados. Por exemplo, alguns pesquisadores exploraram o uso do protocolo OTP, que oferece segurança e desempenho aprimorados em comparação com os protocolos QKD tradicionais.
+
+\subsection{Protocolo BB84}
+
+O protocolo BB84, nomeado após seus inventores Charles Bennett e Gilles Brassard, é um conhecido protocolo de distribuição de chaves quânticas (QKD). Nesse protocolo, o remetente e o destinatário compartilham uma chave secreta trocando estados quânticos por um canal quântico. A chave é gerada medindo os estados usando um dos dois observáveis conjugados, escolhidos aleatoriamente.
+
+A segurança do protocolo BB84 reside no fato de que qualquer tentativa de medir os estados quânticos irá perturbá-los, impossibilitando que um invasor obtenha a chave sem ser detectado. Isso é conhecido como o princípio da não-clonagem quântica.
+
+O protocolo BB84 foi extensivamente estudado e demonstrou ser seguro contra vários tipos de ataques, incluindo ataques de intercepção e reenvio e ataques baseados em entrelaçamento. No entanto, como todos os protocolos QKD, é suscetível à perda de informações por meio de canais laterais, como perda de fotões no canal quântico. As propostas para mitigar essa limitação incluem o uso de códigos de correção de erros e estados de chamariz.
+
+\subsection{Protocolo B92}
+
+O protocolo B92 é outro protocolo conhecido de distribuição de chaves quânticas (QKD). Foi proposto por Charles Bennett em 1992 como uma versão simplificada do protocolo BB84.
+
+No protocolo B92, o remetente e o destinatário compartilham uma chave secreta trocando estados quânticos por um canal quântico. A chave é gerada medindo os estados usando um dos dois observáveis conjugados, escolhidos aleatoriamente. No entanto, ao contrário do protocolo BB84, o remetente envia apenas um estado e o destinatário escolhe aleatoriamente com qual observável medi-lo.
+
+A segurança do protocolo B92 baseia-se nos mesmos princípios do protocolo BB84: a impossibilidade de medir estados quânticos sem perturbá-los e o uso de observáveis conjugados para detectar qualquer distúrbio. No entanto, o protocolo B92 é mais simples e requer menos estados quânticos para serem trocados, tornando-o potencialmente mais prático para algumas aplicações.
+
+Assim como o protocolo BB84, o protocolo B92 é suscetível à perda de informações por meio de canais laterais e outros ataques. Os pesquisadores estudaram várias maneiras de mitigar essas limitações, como o uso de estados de chamariz e códigos de correção de erros.
+
+\subsection{Protocolo E91}
+
+O protocolo E91, também conhecido como esquema E91, é um protocolo de distribuição de chave quântica (QKD) proposto por Artur Ekert em 1991. É uma variante do protocolo BB84 que usa estados quânticos baseados em entrelaçamento em vez de fotões individuais.
+
+No protocolo E91, o remetente e o destinatário compartilham um par de partículas emaranhadas. O remetente mantém uma partícula e envia a outra para o receptor. Eles então usam suas partículas para gerar uma chave secreta, medindo-as usando um dos dois observáveis conjugados, escolhidos aleatoriamente.
+
+A segurança do protocolo E91 baseia-se nos mesmos princípios do protocolo BB84: a impossibilidade de medir estados quânticos sem perturbá-los e o uso de observáveis conjugados para detectar qualquer distúrbio. No entanto, o protocolo E91 tem a vantagem de ser imune a certos tipos de ataques, como ataques de intercepção e reenvio, devido ao entrelaçamento das partículas.
+
+Assim como os protocolos BB84 e B92, o protocolo E91 é suscetível à perda de informações por meio de canais laterais e outros ataques. Os pesquisadores estudaram várias maneiras de mitigar essas limitações, como o uso de estados de chamariz e códigos de correção de erros.
+
+\subsection{Protocolo SARG04}
+
+O protocolo SARG04, também conhecido como protocolo de quatro estados, é um protocolo de distribuição de chave quântica (QKD) proposto por Stefano Pironio, Antonio Acin, Nicolas Gisin e Valerio Scarani em 2004. É uma variante do BB84 e B92 protocolos que usam quatro estados quânticos em vez de dois.
+
+No protocolo SARG04, o remetente e o destinatário compartilham uma chave secreta trocando estados quânticos por um canal quântico. A chave é gerada medindo os estados usando um dos quatro observáveis conjugados, escolhidos aleatoriamente. Os quatro estados são escolhidos de forma que o remetente e o destinatário possam verificar a correção da chave por meio de um teste simples.
+
+A segurança do protocolo SARG04 baseia-se nos mesmos princípios dos protocolos BB84 e B92: a impossibilidade de medir estados quânticos sem perturbá-los e o uso de observáveis conjugados para detectar qualquer distúrbio. O uso de quatro estados em vez de dois permite que o protocolo seja mais resistente a certos tipos de ataques, como o ataque de intercepção e reenvio.
+
+Como os outros protocolos QKD, o protocolo SARG04 é suscetível à perda de informações por meio de canais laterais e outros ataques. Os pesquisadores estudaram várias maneiras de mitigar essas limitações, como o uso de estados de chamariz e códigos de correção de erros.
+
+\subsection{Protocolo OTP}
+
+O protocolo OTP, ou protocolo one-time pad (OTP), é um protocolo de criptografia clássico que fornece segurança incondicional. É um método simples e eficiente de encriptar mensagens usando uma chave secreta compartilhada.
+
+No protocolo OTP, o remetente e o destinatário compartilham uma chave secreta tão longa quanto a mensagem que desejam encriptar. O remetente usa a chave para encriptar a mensagem executando uma operação OR (XOR) exclusiva entre a mensagem e a chave. O receptor pode então desencriptar a mensagem executando a mesma operação XOR usando a mesma chave.
+
+A segurança do protocolo OTP depende do fato de que a chave é completamente aleatória e é usada apenas uma vez. Desde que a chave seja mantida em segredo e seja usada apenas para uma única mensagem, o protocolo é teoricamente inquebrável, mesmo por um invasor com poder computacional ilimitado.
+
+No contexto dos protocolos de distribuição de chaves quânticas (QKD), o protocolo OTP pode ser usado para aprimorar a segurança e o desempenho dos sistemas QKD. Por exemplo, o protocolo OTP pode ser usado para encriptar a chave secreta gerada por um protocolo QKD, fornecendo uma camada adicional de segurança.
+
+O protocolo OTP tem várias vantagens sobre os protocolos QKD tradicionais. É simples e eficiente e oferece segurança incondicional, desde que a chave seja mantida em segredo e usada apenas uma vez. Além disso, não possui as mesmas limitações dos protocolos QKD, como a suscetibilidade à perda de informações por canais laterais.
+
+No entanto, o protocolo OTP também possui várias limitações práticas que devem ser consideradas ao usá-lo em combinação com protocolos QKD. A chave deve ser compartilhada com segurança entre o remetente e o destinatário e deve ser mantida em segredo de todas as outras partes. A chave também deve ser tão longa quanto a mensagem, o que pode ser impraticável para mensagens longas. Além disso, a chave deve ser usada apenas uma vez, portanto, uma nova chave deve ser gerada para cada mensagem.
+
+\section{Protocolos de Autenticação}
+
+No campo da criptografia quântica, os protocolos de autenticação são métodos de verificação segura da identidade de um usuário ou dispositivo em uma rede usando os princípios da mecânica quântica. Eles são uma parte importante dos sistemas de distribuição de chaves quânticas (QKD), pois ajudam a impedir o acesso não autorizado e protegem contra vários tipos de ataques, como personificação e ataques man-in-the-middle.
+
+Existem vários protocolos de autenticação diferentes que foram propostos e estudados para uso em criptografia quântica, cada um com seus pontos fortes e fracos. Alguns protocolos de autenticação comuns para criptografia quântica incluem:
+
+\begin{itemize}
+  \item Autenticação quântica, na qual um usuário comprova sua identidade trocando estados quânticos com o verificador
+  \item Protocolos de acordo de chave quântica, nos quais duas partes estabelecem uma chave secreta compartilhada trocando estados quânticos
+  \item Assinaturas digitais quânticas, nas quais um usuário comprova sua identidade assinando uma mensagem com um estado quântico
+  \item Infraestrutura quântica de chave pública (PKI), na qual usuários e dispositivos recebem certificados digitais que são verificados usando estados quânticos
+\end{itemize}
+
+Esses protocolos de autenticação podem fornecer segurança aprimorada em comparação aos protocolos de autenticação clássicos, pois são baseados nos princípios da mecânica quântica e, portanto, imunes a certos tipos de ataques. No entanto, eles também têm suas próprias limitações e desafios, como a necessidade de hardware quântico especializado e a suscetibilidade à perda de informações por canais secundários.
+
+\subsection{Autenticação Quântica}
+
+A autenticação quântica é um método de verificação segura da identidade de um usuário ou dispositivo em um sistema de distribuição de chave quântica (QKD) usando os princípios da mecânica quântica. Na autenticação quântica, o usuário e o verificador trocam estados quânticos, e o usuário prova sua identidade medindo e respondendo corretamente aos estados.
+
+A autenticação quântica tem várias vantagens sobre os métodos de autenticação clássicos, como autenticação baseada em senha ou autenticação biométrica. Por ser baseado nos princípios da mecânica quântica, é imune a certos tipos de ataques, como ataques de dicionário e ataques man-in-the-middle. Além disso, não exige que o usuário se lembre de uma senha ou possua um token físico, tornando-o potencialmente mais conveniente e fácil de usar.
+
+No entanto, a autenticação quântica também tem seus próprios desafios e limitações. Requer que o usuário e o verificador tenham acesso a hardware quântico especializado, como detectores de fotão único ou fontes de entrelaçamento. Além disso, é suscetível à perda de informações por meio de canais laterais, como perda de fotões no canal quântico.
+
+\subsection{Protocolos de Acordo de Chave Quântica}
+
+Os protocolos de acordo de chave quântica são métodos de estabelecer com segurança uma chave secreta compartilhada entre duas partes usando os princípios da mecânica quântica. Num protocolo de acordo de chave quântica, as duas partes trocam estados quânticos e a chave é gerada realizando medições nos estados.
+
+Os protocolos de acordo de chave quântica têm várias vantagens sobre os protocolos clássicos de acordo de chave, como a troca de chaves Diffie-Hellman. Por serem baseados nos princípios da mecânica quântica, eles são imunes a certos tipos de ataques, como ataques man-in-the-middle e ataques de personificação. Além disso, eles não exigem que as partes tenham um segredo compartilhado anteriormente, tornando-os potencialmente mais práticos e amigáveis.
+
+No entanto, os protocolos de acordo de chave quântica também têm seus próprios desafios e limitações. Eles exigem que as partes tenham acesso a hardware quântico especializado, como detectores de fotão único ou fontes de entrelaçamento. Além disso, eles são suscetíveis à perda de informações por meio de canais laterais, como perda de fotões no canal quântico.
+
+\subsubsection{Troca de chaves Diffie-Hellman}
+
+A troca de chaves Diffie-Hellman (troca de chaves D-H) é um protocolo de criptografia clássico que permite que duas partes estabeleçam uma chave secreta compartilhada em um canal inseguro. Foi proposto pela primeira vez por Whitfield Diffie e Martin Hellman em 1976 e é amplamente utilizado em muitos sistemas criptográficos.
+
+Na troca de chaves D-H, as duas partes, Alice e Bob, concordam com um grande número primo, p, e uma raiz primitiva, g, de p. Alice então escolhe um inteiro secreto, a, e calcula \(g^a \mod p\). Bob escolhe um inteiro secreto, b, e calcula \(g^b \mod p\). Alice e Bob então trocam \(g^a \mod p e g^b \mod p\), respectivamente.
+
+Depois de trocar esses valores, Alice calcula \(g^b \mod p\) e Bob calcula \(g^a \mod p\). Devido às propriedades da aritmética modular, esses dois valores são iguais e formam a chave secreta compartilhada.
+
+A troca de chaves D-H apresenta diversas vantagens, como sua simplicidade e eficiência. Não exige que as partes tenham um segredo compartilhado anteriormente e fornece confidencialidade, pois a chave secreta compartilhada nunca é transmitida pelo canal.
+
+Embora os protocolos de troca de chaves D-H e acordo de chaves quânticas sirvam ao mesmo propósito geral de estabelecer uma chave secreta compartilhada, eles diferem nas suas propriedades e limitações de segurança. A troca de chaves D-H é vulnerável a certos tipos de ataques, como ataques man-in-the-middle, enquanto os protocolos de acordo de chaves quânticas são imunes a esses ataques. Além disso, a troca de chaves D-H não é resistente à perda de informações por meio de canais laterais, enquanto os protocolos de acordo de chave quântica podem ser resistentes a esse tipo de ataque, dependendo do protocolo e implementação específicos.
+
+\subsection{Assinaturas Digitais Quânticas}
+
+As assinaturas digitais quânticas são um método de assinatura segura de mensagens digitais usando os princípios da mecânica quântica. Num esquema de assinatura digital quântica, o usuário prova sua identidade assinando a mensagem com um estado quântico, e o verificador verifica a assinatura medindo o estado.
+
+As assinaturas digitais quânticas têm várias vantagens sobre as assinaturas digitais clássicas, como as assinaturas RSA. Por serem baseados nos princípios da mecânica quântica, eles são imunes a certos tipos de ataques, como ataques de falsificação e ataques de representação. Além disso, eles não exigem que o usuário possua uma chave privada, tornando-os potencialmente mais convenientes e fáceis de usar.
+
+No entanto, as assinaturas digitais quânticas também têm seus próprios desafios e limitações. Eles exigem que o usuário e o verificador tenham acesso a hardware quântico especializado, como detectores de fotão único ou fontes de entrelaçamento. Além disso, eles são suscetíveis à perda de informações por meio de canais laterais, como perda de fotões no canal quântico.
+
+\subsection{Infraestrutura de Chave Públicas Quânticas}
+
+A infraestrutura de chave pública quântica (PKI) é um método de emissão, gestão e verificação segura de certificados digitais usando os princípios da mecânica quântica. Num sistema PKI quântico, os usuários e dispositivos recebem certificados digitais que são verificados usando estados quânticos.
+
+O Quantum PKI tem várias vantagens sobre os sistemas clássicos de PKI, como o uso de RSA ou criptografia de curva elíptica. Por ser baseado nos princípios da mecânica quântica, é imune a certos tipos de ataques, como ataques de falsificação e ataques de representação. Além disso, não exige que o usuário ou o verificador possua uma chave privada, tornando-o potencialmente mais conveniente e amigável.
+
+No entanto, a PKI quântica também tem seus próprios desafios e limitações. Requer que o usuário, o verificador e a autoridade certificadora tenham acesso a hardware quântico especializado, como detectores de fotão único ou fontes de entrelaçamento. Além disso, é suscetível à perda de informações por meio de canais laterais, como perda de fotões no canal quântico.
+
+\newpage
