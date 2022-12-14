@@ -2,7 +2,7 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = pt_PT
 % !TeX root = main
-\documentclass[10pt,a4paper,final]{report}
+\documentclass[10pt,a4paper,final,twoside,openright]{report}
 \usepackage[portuguese]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
@@ -43,38 +43,22 @@
 \author{Gonçalo Amaro -- 17440\\João Saragoça -- 24123\\João Macedo -- 24572} % Doc's author/s
 \date{13 de Dezembro, 2022} % Doc date
 
-\def\blankpage{%
-      \clearpage%
-      \thispagestyle{empty}%
-      \addtocounter{page}{-1}%
-      \null%
-      \clearpage
-}
-
 \begin{document}
 
 \maketitle
 
-\blankpage{}
-
 \printacronyms[name=Lista de Abreviaturas, display=all, sort=true]
-
-\blankpage{}
 
 {
   \hypersetup{linkcolor=black}
   \tableofcontents
 }
 
-\blankpage{}
-
 {
   \hypersetup{linkcolor=black}
   \listoffigures
 %  \listoftables
 }
-
-\blankpage{}
 
 \input{pages/intro.tex}
 \input{pages/limitations.tex}
